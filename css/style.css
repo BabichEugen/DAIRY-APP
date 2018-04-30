@@ -1,0 +1,156 @@
+html,body {
+  background-color: rgb(249, 249, 249);
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;  
+}
+
+.container-fluid { /*fixed size of main page*/
+  width: 1280px;
+}
+
+.panel{ /* both panels: items, comments */
+  padding: 30px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 0px;
+  background-color: rgb(249, 249, 249);
+  box-shadow: none;  
+}
+
+.panel:last-child {
+  padding-right: 20px;
+  padding-left: 20px;  
+}
+
+.board { /* both boards: items, comments */
+  padding: 20px;
+  background-color: white;
+  box-shadow:inset 0px 0px 2px 2px rgb(221,221, 221);
+  border-radius: 5px;
+}
+
+.left-panel { /* app name placeholder */
+  background-color: rgb(43, 47, 62);
+  overflow: hidden; 
+  margin-bottom: -100%;
+  padding-bottom: 100%;  
+}
+
+.left-panel-text {
+  margin-left: 20px;
+}
+
+.left-empty-content h1 {
+  margin-top: 30px;  
+  color: white;
+}
+
+.left-empty-content h4 {
+  margin-top: 0px;
+  color: rgb(122, 123, 124);
+}
+
+.btn-primary { /* Add new btn */
+  border-color: rgb(39, 204, 192);
+  background-color: rgb(39, 204, 192);
+  border-width: 2px;
+  color:white;
+  padding-left: 20px;
+  padding-right: 20px;  
+  margin-right: 15px;
+}
+
+.btn-delete { /* delete item btn */
+  border-color: rgb(255, 152, 172);;
+  border-width: 2px;
+  color:rgb(255, 48, 90);
+  padding-left: 25px;
+  padding-right: 25px;  
+}
+
+.badge { /* comments counter */
+  background-color: rgb(39, 204, 192);
+  padding-left: 10px;
+  padding-right: 10px;  
+}
+
+.items-content {
+  min-height: 500px;
+}
+
+.list-group-item { /* style of items, comments lists */
+  background-color: rgba(255,255,255,0);
+  border:none;
+  padding: 10px 0px 10px 0;
+  border-bottom: 1px solid rgb(242, 242, 242);
+  overflow:hidden; 
+}
+
+.list-group-item:first-child {
+  border-top:none;
+  padding-top: 15px;
+}
+
+
+.item-list > .list-group-item:hover,
+.current { /* mouse selection */
+  text-decoration: none;
+  border-left: solid;
+  border-left-width: 5px;
+  border-left-color: rgb(255,47,90);
+  position: relative;
+  right: 21px;
+  padding-left: 16px;
+  width: 482.33px;
+}
+
+.item-list > .list-group-item:hover {
+	background:rgb(230,230,230);
+}
+
+.item-name { /* item in list */
+  vertical-align: middle; 
+  font-size: 14pt;
+  position: relative;
+  top: 7px;
+}
+
+.box { /* avatar placeholder */
+	width:50px;
+	height:50px;
+  margin: 10px;
+  margin-top: 3px;
+}
+ 
+.orange { /* placeholder color */
+  border:solid;
+  border-width: 1px;
+  border-color:rgb(255,197,128);  
+	background:rgb(255,138,0);
+}
+
+.blue { /* placeholder color */
+  border:solid;
+  border-width: 1px;
+  border-color:rgb(163,171,198); 
+	background:rgb(71,86,140);
+}
+
+.grey { /* placeholder color - new comment */
+  border:solid;
+  border-width: 1px;
+  border-color:rgb(243,243,243); 
+	background:rgb(230,230,230);
+}
+
+.comment-name { /* comment in list */ 
+  font-size: 9pt;
+  padding-left: 0px;
+  padding-right: 0px;  
+}
+
+.comment-input { /* add comment textarea */
+  float: left;
+  width: 290px;
+}
