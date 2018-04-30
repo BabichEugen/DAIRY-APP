@@ -58,8 +58,9 @@ module.controller('itemCtrl', function ($scope) {
   $scope.checkCtrlEnterKeyPressed = function ($event) {
     var keyCode = $event.which || $event.keyCode;
 
+
     // "Ctrl + Enter" pressed
-    if ($event.ctrlKey && keyCode === 10) {
+    if ($event.ctrlKey && (keyCode === 13 || keyCode === 10)) {
 
       $scope.items[$scope.currentIndex].comments.push({ 'text': $scope.newComment });
       $scope.newComment = "";
